@@ -1,0 +1,15 @@
+<h3>Author Details with Observable</h3>
+<ul>
+  <li *ngFor="let author of observableAuthors | async" >
+    Id: {{author.authorId}}, Name: {{author.authorName}}
+  </li>
+</ul>
+
+<h3>Author Details after "subscribe" to Observable </h3>
+<ul>
+  <li *ngFor="let author of authors" >
+    Id: {{author.authorId}}, Name: {{author.authorName}}
+  </li>
+</ul>
+
+<div *ngIf="errorMessage"> {{errorMessage}} </div> 
