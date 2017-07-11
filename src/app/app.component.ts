@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <app-observable></app-observable>
-    <app-promise></app-promise>
+    <!-- <author-observable></author-observable>
+    <author-promise></author-promise> -->
+    <book-observable></book-observable>
   `
 })
 

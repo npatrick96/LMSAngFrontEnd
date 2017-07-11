@@ -1,14 +1,14 @@
 <h3>Author Details with Promise</h3>
 <ul>
   <li *ngFor="let author of promiseAuthors | async" >
-    Id: {{author.authorId}}, Name: {{author.authorName}}
+    Author Id: {{author.authorId}}, Author Name: {{author.authorName}}
   </li>
 </ul>
 
 <h3>Author Details after "then" to Promise </h3>
 <ul>
   <li *ngFor="let author of authors" >
-    Id: {{author.authorId}}, Name: {{author.authorName}}
+    Author Id: {{author.authorId}}, Author Name: {{author.authorName}}
   </li>
 </ul>
 

@@ -3,21 +3,25 @@ import { NgModule } from '@angular/core';
 import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { ObservableComponent } from './observable.component';
-import { PromiseComponent } from './promise.component';
+import { AuthorObservableComponent } from './author-observable.component';
+import { BookObservableComponent } from './book-observable.component';
+import { AuthorPromiseComponent } from './author-promise.component';
+
 import { AuthorService } from './author.service';
+import { BookService } from './book.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ObservableComponent,
-    PromiseComponent,
+    AuthorObservableComponent,
+    AuthorPromiseComponent,
+    BookObservableComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule
   ],
-  providers: [AuthorService],
+  providers: [AuthorService, BookService],
   bootstrap: [AppComponent]
 })
 

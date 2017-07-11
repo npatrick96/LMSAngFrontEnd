@@ -5,10 +5,10 @@ import { AuthorService } from './author.service';
 import { Author } from './author';
 
 @Component({
-   selector: 'app-observable',
-   templateUrl: './observable.component.html'
+   selector: 'author-observable',
+   templateUrl: './author-observable.component.html'
 })
-export class ObservableComponent implements OnInit { 
+export class AuthorObservableComponent implements OnInit { 
    observableAuthors: Observable<Author[]>
    authors: Author[];
    errorMessage: String;

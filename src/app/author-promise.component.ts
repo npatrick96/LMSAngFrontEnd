@@ -4,10 +4,10 @@ import { AuthorService } from './author.service';
 import { Author } from './author';
 
 @Component({
-   selector: 'app-promise',
-   templateUrl: './promise.component.html'
+   selector: 'author-promise',
+   templateUrl: './author-promise.component.html'
 })
-export class PromiseComponent implements OnInit { 
+export class AuthorPromiseComponent implements OnInit { 
    promiseAuthors: Promise<Author[]>
    authors: Author[];
    errorMessage: String;
