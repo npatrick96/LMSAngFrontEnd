@@ -8,7 +8,7 @@ import { Publisher } from './publisher';
 
 @Injectable()
 export class PublisherService {
-  url = "http://localhost:8080/api/a_viewauthors";
+  url = "http://localhost:8080/api/publishers";
   constructor(private http: Http) { }
   getPublishersWithObservable(): Observable<Publisher[]> {
     return this.http.get(this.url)

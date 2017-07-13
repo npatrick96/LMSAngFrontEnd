@@ -8,7 +8,7 @@ import { Branch } from './branch';
 
 @Injectable()
 export class BranchService {
-  url = "http://localhost:8080/api/a_viewauthors";
+  url = "http://localhost:8080/api/branches";
   constructor(private http: Http) { }
   getBranchesWithObservable(): Observable<Branch[]> {
     return this.http.get(this.url)

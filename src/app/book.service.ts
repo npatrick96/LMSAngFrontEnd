@@ -8,7 +8,7 @@ import { Book } from './book';
 
 @Injectable()
 export class BookService {
-    url = "http://localhost:8080/api/a_viewbooks";
+    url = "http://localhost:8080/api/books";
     constructor(private http:Http) { }
     getBooksWithObservable(): Observable<Book[]> {
         return this.http.get(this.url)

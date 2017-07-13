@@ -8,7 +8,7 @@ import { Genre } from './genre';
 
 @Injectable()
 export class GenreService {
-  url = "http://localhost:8080/api/a_viewauthors";
+  url = "http://localhost:8080/api/genres";
   constructor(private http: Http) { }
   getGenresWithObservable(): Observable<Genre[]> {
     return this.http.get(this.url)

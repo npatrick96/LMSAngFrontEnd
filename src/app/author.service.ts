@@ -8,7 +8,7 @@ import { Author } from './author';
 
 @Injectable()
 export class AuthorService {
-  url = "http://localhost:8080/api/a_viewauthors";
+  url = "http://localhost:8080/api/authors";
   constructor(private http: Http) { }
   getAuthorsWithObservable(): Observable<Author[]> {
     return this.http.get(this.url)

@@ -8,7 +8,7 @@ import { Borrower } from './borrower';
 
 @Injectable()
 export class BorrowerService {
-  url = "http://localhost:8080/api/a_viewauthors";
+  url = "http://localhost:8080/api/borrowers";
   constructor(private http: Http) { }
   getBorrowersWithObservable(): Observable<Borrower[]> {
     return this.http.get(this.url)

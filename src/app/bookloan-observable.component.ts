@@ -8,7 +8,7 @@ import { BookLoan } from './bookloan';
    selector: 'bookloan-observable',
    templateUrl: './bookloan-observable.component.html'
 })
-export class BookCopyObservableComponent implements OnInit { 
+export class BookLoanObservableComponent implements OnInit { 
    observableBookLoans: Observable<BookLoan[]>
    bookloans: BookLoan[];
    errorMessage: String;
