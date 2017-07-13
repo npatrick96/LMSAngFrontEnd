@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("./template_files/jumbotron-narrow.css");
+@import url("./template_files/bootstrap.min.css");
+@import url("./template_files/bootstrap-chosen.css");
+@import url("./template_files/bootstrap-theme.min.css");
+@import url("./template_files/ie10-viewport-bug-workaround.css");
+@import url("./template_files/theme.css");

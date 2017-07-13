@@ -27,7 +27,7 @@ import { PublisherService } from './publisher.service';
     AppComponent,
     AuthorObservableComponent,
     BookObservableComponent,
-    BookCopyObservableComponent,
+    BookLoanObservableComponent,
     BookCopyObservableComponent, 
     BorrowerObservableComponent, 
     BranchObservableComponent,
