@@ -14,7 +14,7 @@ export class BookCopyObservableComponent implements OnInit {
    errorMessage: String;
    constructor(private bookCopyService: BookCopyService) { }
    ngOnInit(): void {
-  this.observableBookCopies = this.bookCopyService.getBookCopiessWithObservable();
+  this.observableBookCopies = this.bookCopyService.getBookCopiesWithObservable();
   this.observableBookCopies.subscribe(
             bookcopies => this.bookcopies = bookcopies,
             error =>  this.errorMessage = <any>error);

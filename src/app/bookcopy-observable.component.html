@@ -1,14 +1,14 @@
-<h3>Book Details with Observable</h3>
+<h3>Book Copies Details with Observable</h3>
 <ul>
-  <li *ngFor="let book of observableBooks | async" >
-    Id: {{book.bookId}}, Title: {{book.title}}
+  <li *ngFor="let bookcopy of observableBookCopies | async" >
+    Book: {{bookcopy.book.title}}, Branch: {{bookcopy.branch.branchName}}, noOfCopies: {{bookcopy.noOfCopies}}
   </li>
 </ul>
 
-<h3>Book Details after "subscribe" to Observable </h3>
+<h3>Book Copies Details after "subscribe" to Observable </h3>
 <ul>
-  <li *ngFor="let book of books" >
-    Id: {{book.authorId}}, Title: {{book.title}}
+  <li *ngFor="let bookcopy of bookcopies" >
+    Id: {{bookcopy.book.title}}, Title: {{bookcopy.branch.branchName}}, noOfCopies: {{bookcopy.noOfCopies}}
   </li>
 </ul>
 

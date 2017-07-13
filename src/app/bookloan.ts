@@ -1,4 +1,8 @@
-export class Book {
+import { Branch } from './branch';
+import { Borrower } from './borrower';
+import { Book } from './book';
+
+export class BookLoan {
 
   book: Book;
   branch: Branch;

@@ -4,18 +4,18 @@ import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
-import { BookCopy } from './bookcopy';
+import { BookLoan } from './bookloan';
 
 @Injectable()
-export class BookCopyService {
+export class BookLoanService {
     url = "http://localhost:8080/api/a_viewbooks";
     constructor(private http:Http) { }
-    getBookCopiesWithObservable(): Observable<BookCopy[]> {
+    getBookLoansWithObservable(): Observable<BookLoan[]> {
         return this.http.get(this.url)
           .map(this.extractData)
           .catch(this.handleErrorObservable);
     }
-    getBookCopiesWithPromise(): Promise<BookCopy[]> {
+    getBookLoanWithPromise(): Promise<BookLoan[]> {
         return this.http.get(this.url).toPromise()
       .then(this.extractData)
       .catch(this.handleErrorPromise);
