@@ -1,4 +1,11 @@
-<h3>Book Details with Observable</h3>
+<ul>
+  <li *ngFor="let book of books" >
+    Id: {{book.bookId}}, Title: {{book.title}}
+  </li>
+</ul>
+
+
+<!-- <h3>Book Details with Observable</h3>
 <ul>
   <li *ngFor="let book of observableBooks | async" >
     Id: {{book.bookId}}, Title: {{book.title}}
@@ -12,4 +19,4 @@
   </li>
 </ul>
 
-<div *ngIf="errorMessage"> {{errorMessage}} </div> 
+<div *ngIf="errorMessage"> {{errorMessage}} </div>  -->

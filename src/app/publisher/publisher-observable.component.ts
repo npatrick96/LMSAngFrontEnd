@@ -10,13 +10,13 @@ import { Publisher } from './publisher';
 })
 export class PublisherObservableComponent implements OnInit { 
    observablePublishers: Observable<Publisher[]>
-   publisheres: Publisher[];
+   publishers: Publisher[];
    errorMessage: String;
    constructor(private publisherService: PublisherService) { }
    ngOnInit(): void {
         this.observablePublishers = this.publisherService.getPublishersWithObservable();
   this.observablePublishers.subscribe(
-            publisheres => this.publisheres = publisheres,
+            publishers => this.publishers = publishers,
             error =>  this.errorMessage = <any>error);
    }
 } 

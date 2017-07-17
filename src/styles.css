@@ -5,3 +5,7 @@
 @import url("./template_files/bootstrap-theme.min.css");
 @import url("./template_files/ie10-viewport-bug-workaround.css");
 @import url("./template_files/theme.css");
+
+ul {
+  list-style-type: none;
+}

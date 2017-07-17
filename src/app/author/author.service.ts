@@ -5,10 +5,12 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
 import { Author } from './author';
+import * as myGlobals from '../globals';
 
 @Injectable()
 export class AuthorService {
-  url = "http://localhost:8080/api/authors";
+  url = myGlobals.baseUrl+"authors";
+  //url = "http://localhost:8080/api/authors";
   constructor(private http: Http) { }
   getAuthorsWithObservable(): Observable<Author[]> {
     return this.http.get(this.url)

@@ -1,4 +1,11 @@
-<h3>Book Copies Details with Observable</h3>
+<ul>
+  <li *ngFor="let bookcopy of observableBookCopies | async" >
+    Book: {{bookcopy.book.title}}, Branch: {{bookcopy.branch.branchName}}, noOfCopies: {{bookcopy.noOfCopies}}
+  </li>
+</ul>
+
+
+<!-- <h3>Book Copies Details with Observable</h3>
 <ul>
   <li *ngFor="let bookcopy of observableBookCopies | async" >
     Book: {{bookcopy.book.title}}, Branch: {{bookcopy.branch.branchName}}, noOfCopies: {{bookcopy.noOfCopies}}
@@ -12,4 +19,4 @@
   </li>
 </ul>
 
-<div *ngIf="errorMessage"> {{errorMessage}} </div> 
+<div *ngIf="errorMessage"> {{errorMessage}} </div>  -->

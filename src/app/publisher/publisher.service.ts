@@ -4,18 +4,20 @@ import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
-import { Borrower } from './borrower';
+import { Publisher } from './publisher';
+import * as myGlobals from '../globals';
 
 @Injectable()
-export class BorrowerService {
-  url = "http://localhost:8080/api/borrowers";
+export class PublisherService {
+  url = myGlobals.baseUrl+"publishers";
+  //url = "http://localhost:8080/api/publishers";
   constructor(private http: Http) { }
-  getBorrowersWithObservable(): Observable<Borrower[]> {
+  getPublishersWithObservable(): Observable<Publisher[]> {
     return this.http.get(this.url)
       .map(this.extractData)
       .catch(this.handleErrorObservable);
   }
-  getBorrowersWithPromise(): Promise<Borrower[]> {
+  getPublishersWithPromise(): Promise<Publisher[]> {
     return this.http.get(this.url).toPromise()
       .then(this.extractData)
       .catch(this.handleErrorPromise);

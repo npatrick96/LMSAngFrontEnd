@@ -5,10 +5,12 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
 import { Branch } from './branch';
+import * as myGlobals from '../globals';
 
 @Injectable()
 export class BranchService {
-  url = "http://localhost:8080/api/branches";
+  url = myGlobals.baseUrl+"branches";
+  //url = "http://localhost:8080/api/branches";
   constructor(private http: Http) { }
   getBranchesWithObservable(): Observable<Branch[]> {
     return this.http.get(this.url)

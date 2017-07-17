@@ -1,5 +1,12 @@
+<h3>List of all Authors</h3>
+<ul>
+  <li *ngFor="let author of observableAuthors | async" >
+    Author Id: {{author.authorId}}, Author Name: {{author.authorName}}
+  </li>
+</ul>
 
-<h3>Author Details with Observable</h3>
+
+<!-- <h3>Author Details with Observable</h3>
 <ul>
   <li *ngFor="let author of observableAuthors | async" >
     Author Id: {{author.authorId}}, Author Name: {{author.authorName}}
@@ -13,4 +20,4 @@
   </li>
 </ul>
 
-<div *ngIf="errorMessage"> {{errorMessage}} </div> 
+<div *ngIf="errorMessage"> {{errorMessage}} </div>  -->

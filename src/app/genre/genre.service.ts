@@ -5,10 +5,12 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
 import { Genre } from './genre';
+import * as myGlobals from '../globals';
 
 @Injectable()
 export class GenreService {
-  url = "http://localhost:8080/api/genres";
+  url = myGlobals.baseUrl+"genres";
+  //url = "http://localhost:8080/api/genres";
   constructor(private http: Http) { }
   getGenresWithObservable(): Observable<Genre[]> {
     return this.http.get(this.url)

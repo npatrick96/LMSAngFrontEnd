@@ -1,0 +1,27 @@
+<div class="container" role="main">
+  <div class="header clearfix">
+    <nav>
+      <ul class="nav nav-pills pull-right">
+        <li role="presentation"><a routerLink="admin">Admin</a></li>
+        <li role="presentation"><a routerLink="librarian">Librarian</a></li>
+        <li role="presentation"><a routerLink="borrower">Borrower</a></li>
+      </ul>
+    </nav>
+    <h3 class="text-muted"><a routerLink="" class="text-muted">GCIT - LMS WEB</a></h3>
+  </div>
+</div>
+
+<div class="container jumbotron">
+  <router-outlet></router-outlet>
+  <!-- <author-promise></author-promise> -->
+  
+  <!-- <author-observable></author-observable> 
+  <book-observable></book-observable>
+  <bookloan-observable></bookloan-observable>
+  <bookcopy-observable></bookcopy-observable>
+  <borrower-observable></borrower-observable>
+  <branch-observable></branch-observable>
+  <genre-observable></genre-observable>
+  <publisher-observable></publisher-observable>
+  -->
+</div>

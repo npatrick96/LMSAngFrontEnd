@@ -1,0 +1,21 @@
+<ul>
+  <li *ngFor="let publisher of observablePublishers | async" >
+    No: {{publisher.publisherId}}, Name: {{publisher.publisherName}}, Address: {{publisher.publisherAddress}}, Phone: {{publisher.publisherPhone}}
+  </li>
+</ul>
+
+<!-- <h3>Publisher Details with Observable</h3>
+<ul>
+  <li *ngFor="let publisher of observablePublishers | async" >
+    No: {{publisher.publisherId}}, Name: {{publisher.publisherName}}, Address: {{publisher.publisherAddress}}, Phone: {{publisher.publisherPhone}}
+  </li>
+</ul>
+
+<h3>Publisher Details after "subscribe" to Observable </h3>
+<ul>
+  <li *ngFor="let publisher of publishers" >
+    No: {{publisher.publisherId}}, Name: {{publisher.publisherName}}, Address: {{publisher.publisherAddress}}, Phone: {{publisher.publisherPhone}}
+  </li>
+</ul>
+
+<div *ngIf="errorMessage"> {{errorMessage}} </div>  -->
