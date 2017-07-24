@@ -1,3 +1,4 @@
+<h3>List of all Loans</h3>
 <ul>
   <li *ngFor="let bookloan of observableBookLoans | async" >
     Book: {{bookloan.book.title}}, Branch: {{bookloan.branch.branchName}}, Borrower: {{bookloan.borrower.name}}, dateOut: {{bookloan.dateOut}}, dueDate: {{bookloan.dueDate}}, dateIn: {{bookloan.dateIn}}

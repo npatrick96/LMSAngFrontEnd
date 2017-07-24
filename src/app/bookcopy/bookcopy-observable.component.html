@@ -1,3 +1,4 @@
+<h3>List of all Book Copies</h3>
 <ul>
   <li *ngFor="let bookcopy of observableBookCopies | async" >
     Book: {{bookcopy.book.title}}, Branch: {{bookcopy.branch.branchName}}, noOfCopies: {{bookcopy.noOfCopies}}

@@ -1,3 +1,4 @@
+<h3>List of all Borrowers</h3>
 <ul>
   <li *ngFor="let borrower of observableBorrowers | async" >
     No: {{borrower.cardNo}}, Name: {{borrower.name}}, Address: {{borrower.address}}, Phone: {{borrower.phone}}

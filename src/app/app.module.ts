@@ -35,6 +35,7 @@ const routes: Routes = [
   {path: 'admin', component: AdminComponent},
   {path: 'authors', component: AuthorObservableComponent},
   {path: 'books', component: BookObservableComponent},
+  {path: 'branches', component: BranchObservableComponent},
   {path: 'bookloans', component: BookLoanObservableComponent},
   {path: 'bookcopies', component: BookCopyObservableComponent},
   {path: 'genres', component: GenreObservableComponent},
