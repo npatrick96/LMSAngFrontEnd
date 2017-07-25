@@ -15,6 +15,7 @@ import { PublisherService } from './publisher/publisher.service';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AuthorObservableComponent } from './author/author-observable.component';
+import { AddAuthorComponent } from './author/add-author.component';
 import { BookObservableComponent } from './book/book-observable.component';
 import { BookCopyObservableComponent } from './bookcopy/bookcopy-observable.component';
 import { BookLoanObservableComponent } from './bookloan/bookloan-observable.component';
@@ -34,6 +35,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'authors', component: AuthorObservableComponent},
+  {path: 'addauthor', component: AddAuthorComponent},
   {path: 'books', component: BookObservableComponent},
   {path: 'branches', component: BranchObservableComponent},
   {path: 'bookloans', component: BookLoanObservableComponent},
@@ -47,6 +49,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     AuthorObservableComponent,
+    AddAuthorComponent,
     BookObservableComponent,
     BookLoanObservableComponent,
     BookCopyObservableComponent, 

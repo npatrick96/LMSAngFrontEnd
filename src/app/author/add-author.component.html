@@ -1,0 +1,22 @@
+<form action="addAuthor" method="post">
+  <div class="row">
+    <span style="width: 250px;">Author Name</span>
+  </div>
+  <div class="row">
+    <input name="authorName" class="input-md" type="text" placeholder="Author Name" style="width: 250px;">
+</div>
+
+<div class="col-xs-12" style="height: 5px;"></div>
+
+<button type="submit" style="width: 250px;" class="btn-primary btn btn-lg">Add
+  Author!</button>
+<div class="col-xs-12" style="height: 5px;"></div>
+
+</form>
+
+<!-- <h3>List of all Authors</h3> -->
+<ul>
+  <li *ngFor="let author of observableAuthors | async" >
+    Author Id: {{author.authorId}}, Author Name: {{author.authorName}}
+  </li>
+</ul>

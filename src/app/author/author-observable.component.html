@@ -1,3 +1,7 @@
+<a routerLink="/addauthor">Add New Author</a>
+<div>
+<router-outlet></router-outlet>
+</div>
 <h3>List of all Authors</h3>
 <ul>
   <li *ngFor="let author of observableAuthors | async" >
